@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="399.0" prefWidth="327.0" spacing="20.0" style="-fx-background-color: #eaeaea;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectjsonapi.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Button fx:id="submitButton" onAction="#onSubmitButton" prefHeight="23.0" prefWidth="75.0" style="-fx-background-color: #d30259; -fx-cursor: pointer;" text="Submit" textFill="WHITE" translateX="-100.0" translateY="-50.0">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <font>
+         <Font name="FreeSans Bold" size="13.0" />
+      </font>
+      <effect>
+         <DropShadow height="10.0" radius="4.5" width="10.0" />
+      </effect>
+   </Button>
+   <Label style="-fx-background-color: #eaeaea;" text="TOTAL DATA :" translateX="-95.0" translateY="-50.0" />
+   <TextField fx:id="totalData" prefHeight="24.0" prefWidth="129.0" scaleX="0.5" style="-fx-font-weight: bold; -fx-font-family: arial;" translateX="-70.0" translateY="-60.0">
+      <font>
+         <Font size="16.0" />
+      </font></TextField>
+   <Label text="HARGA TERTINGGI : " translateX="-70.0" translateY="-60.0" />
+   <TextField fx:id="hargaTertinggiText" scaleX="0.5" style="-fx-font-weight: bold; -fx-font-family: arial;" translateX="-70.0" translateY="-70.0">
+      <font>
+         <Font size="16.0" />
+      </font></TextField>
+    <Button fx:id="closeButton" onAction="#onCloseButtonClick" style="-fx-background-color: #d30259; -fx-cursor: pointer;" text="Close" textAlignment="CENTER" textFill="WHITE" translateX="110.0" translateY="50.0">
+      <font>
+         <Font name="FreeSans" size="13.0" />
+      </font>
+      <effect>
+         <DropShadow height="10.0" radius="4.5" width="10.0">
+            <color>
+               <Color red="0.19736842811107635" green="0.19736842811107635" blue="0.19736842811107635" />
+            </color>
+         </DropShadow>
+      </effect></Button>
+   <effect>
+      <DropShadow />
+   </effect>
+</VBox>
